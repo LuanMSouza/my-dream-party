@@ -14,6 +14,7 @@ export default function Hero() {
                     alt="Logo My Dream Party"
                     className="bg-gray-950 rounded-full z-10 "
                     priority
+                    sizes="(max-width: 640px) 100vw, 200px"
                 />
 
                 <div className="h-50 w-50 rounded-full border-10 border-t-blue-300 border-l-green-400 border-r-pink-400 border-b-yellow-400 

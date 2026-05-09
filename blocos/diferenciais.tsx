@@ -8,7 +8,7 @@ export default function Diferenciais() {
     ]
 
     return (
-        <section id="diferenciais" className="relative my-4 overflow-hidden">
+        <section id="diferenciais" className="relative my-4 ">
 
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square h-full rounded-full bg-purple-600/30 -z-10"
                 style={{ background: 'radial-gradient(circle, rgba(51,77,243,0.4) 0%, transparent 70%)' }}
