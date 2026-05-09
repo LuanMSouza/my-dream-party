@@ -12,10 +12,10 @@ export default function Diferenciais() {
 
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square h-full rounded-full bg-purple-600/30 -z-10"
                 style={{ background: 'radial-gradient(circle, rgba(51,77,243,0.4) 0%, transparent 70%)' }}
-            />  
+            />
 
-            <h2 className="text-center font-bold text-3xl uppercase tracking-widest text-[#d55f9c] mb-8">
-                Nossos diferenciais</h2>
+            <h2 className="text-center md:text-5xl font-bold text-3xl uppercase tracking-widest text-[#d55f9c] mb-8">
+                Nossos diferenciais!</h2>
 
             {/* Container das bolhas */}
             <div className="flex flex-col md:gap-10 sm:flex-row sm:gap-1 w-full gap-4 sm:w-[90%] sm:m-auto sm:pt-5">

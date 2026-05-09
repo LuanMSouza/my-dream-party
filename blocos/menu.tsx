@@ -31,8 +31,8 @@ export default function Menu() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square h-[70%] rounded-full bg-purple-600/30 -z-10"
                 style={{ background: 'radial-gradient(circle, rgba(147,51,234,0.4) 0%, transparent 70%)' }}
             />
-            
-            <h2 className="text-center font-bold text-3xl uppercase tracking-widest text-[#d55f9c] mb-8">
+
+            <h2 className="text-center font-bold text-3xl md:text-5xl uppercase tracking-widest text-[#d55f9c] mb-8">
                 nossos menus!</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center">
 
@@ -53,8 +53,8 @@ export default function Menu() {
                 </div>
 
                 {/* Texto */}
-                <p className="sm:max-w-full sm:text-left sm:text-2xl text-center text-white/80 font-sans text-xl max-w-[80%] mx-auto leading-relaxed md:w-100">
-                    Menus pensados para qualquer horario e ocasião!</p>
+                <p className="sm:max-w-full sm:text-left sm:text-2xl md:text-3xl text-center text-white/80 font-sans text-xl max-w-[80%] mx-auto leading-relaxed md:w-100">
+                    Cardápios cuidadosamente elaborados para encantar em qualquer horário e ocasião.</p>
 
             </div>
 

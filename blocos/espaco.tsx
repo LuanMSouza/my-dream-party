@@ -29,7 +29,7 @@ export default function Espaco() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square h-[70%] rounded-full bg-purple-600/30 -z-10"
                 style={{ background: 'radial-gradient(circle, rgba(147,51,234,0.4) 0%, transparent 70%)' }}
             />
-            <h2 className="text-center font-bold text-3xl uppercase tracking-widest text-[#d55f9c] mb-8">
+            <h2 className="text-center md:text-5xl font-bold text-3xl uppercase tracking-widest text-[#d55f9c] mb-8">
                 nosso espaço!</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center">
@@ -50,8 +50,8 @@ export default function Espaco() {
                 </div>
 
                 {/* Texto */}
-                <p className="sm:max-w-full text-center text-white/80 sm:text-left font-sans text-xl max-w-[80%] mx-auto leading-relaxed sm:text-2xl md:w-100">
-                    Espaço Amplo, para abrigar qualquer tipo de festa ou evento!</p>
+                <p className="sm:max-w-full md:text-3xl text-center text-white/80 sm:text-left font-sans text-xl max-w-[80%] mx-auto leading-relaxed sm:text-2xl md:w-100">
+                    Um espaço amplo e versátil, perfeito para transformar qualquer celebração em uma festa inesquecível!</p>
 
             </div>
 
