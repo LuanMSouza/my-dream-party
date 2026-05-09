@@ -27,13 +27,17 @@ export default function Menu() {
 
     return (
         <section id="menu" className="my-10 relative">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-600/50 blur-[120px] -z-10" />
+
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square h-[70%] rounded-full bg-purple-600/30 -z-10"
+                style={{ background: 'radial-gradient(circle, rgba(147,51,234,0.4) 0%, transparent 70%)' }}
+            />
+            
             <h2 className="text-center font-bold text-3xl uppercase tracking-widest text-[#d55f9c] mb-8">
-             nossos menus!</h2>
-            <div className="grid grid-cols-1">
+                nossos menus!</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center">
 
                 {/* Carrosel */}
-                <div className="relative mx-auto w-[70%] max-w-5xl aspect-3/4 my-3 overflow-hidden rounded-2xl shadow-2xl border border-white">
+                <div className="relative  mx-auto w-[70%] max-w-5xl aspect-3/4 my-3 overflow-hidden rounded-2xl shadow-2xl border border-white  md:max-w-150 md:mr-0 md:ml-auto">
                     {imagens.map((img) => (
                         <Image
                             key={img.id}
@@ -49,8 +53,9 @@ export default function Menu() {
                 </div>
 
                 {/* Texto */}
-                <p className="text-center text-white/80 font-sans text-xl max-w-[80%] mx-auto leading-relaxed">
-                    Espaço Amplo, para abrigar qualquer tipo de festa ou evento!</p>
+                <p className="sm:max-w-full sm:text-left sm:text-2xl text-center text-white/80 font-sans text-xl max-w-[80%] mx-auto leading-relaxed md:w-100">
+                    Menus pensados para qualquer horario e ocasião!</p>
+
             </div>
 
 

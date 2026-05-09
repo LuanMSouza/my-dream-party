@@ -6,13 +6,13 @@ export default function Hero() {
     return (
         <section>
             {/* Logo */}
-            <div className="w-full flex justify-center relative my-5 ">
+            <div className="w-full  flex justify-center relative my-5 ">
                 <Image
                     src={'/logo.webp'}
                     height={200}
                     width={200}
                     alt="Logo My Dream Party"
-                    className="bg-gray-950 rounded-full z-10"
+                    className="bg-gray-950 rounded-full z-10 "
                     priority
                 />
 
@@ -24,14 +24,14 @@ export default function Hero() {
             <h1 className="hidden">My Dream Party - santos/sp</h1>
 
             {/* Texto */}
-            <p className="text-xl text-center text-white --font-orbitron my-10">
-                Transformamos <span className="text-pink-300">sonhos</span>
+            <p className="text-xl text-center text-white --font-orbitron my-10 sm:text-3xl">
+                Transformamos <span className="text-pink-400">sonhos</span>
                 <br />
-                em festas <span className="text-blue-300">inesquecíveis</span>
+                em festas <span className="text-blue-400">inesquecíveis</span>
             </p>
 
             {/* NavBar */}
-            <nav className="neon shadow-blue bg-gray-950 border-y-2 border-blue-300 grid grid-cols-2 text-center gap-y-3 py-3 font-arial text-white font-sans text-xl">
+            <nav className="neon md:px-40 shadow-blue bg-gray-950 border-y-2 border-blue-300 grid grid-cols-2 text-center gap-y-3 py-3 font-arial text-white font-sans text-xl sm:grid-cols-4">
                 <a href="#espaco">Espaço</a>
                 <a href="#kids">Espaço <span className="text-pink-300">Kids</span></a>
                 <a href="#menu">Menu</a>

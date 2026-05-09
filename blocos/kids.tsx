@@ -27,15 +27,16 @@ export default function Kids() {
     return (
         <section id="kids" className="my-10 relative">
 
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-600/50 blur-[120px] -z-10" />
-
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square h-[70%] rounded-full bg-purple-600/30 -z-10"
+                style={{ background: 'radial-gradient(circle, rgba(51,77,243,0.4) 0%, transparent 70%)' }}
+            />
             <h2 className="text-center font-bold text-3xl uppercase tracking-widest text-[#d55f9c] mb-8">
                 Espaço kids!
             </h2>
 
-            <div className="grid grid-cols-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 sm:[direction:rtl] sm:gap-0  justify-center items-center ">
                 {/* Carrosel */}
-                <div className="relative mx-auto w-[70%] max-w-5xl aspect-3/4 my-3 overflow-hidden rounded-2xl shadow-2xl border border-white">
+                <div className=" md:max-w-150 md:ml-0 md:mr-auto relative mx-auto w-[70%] max-w-5xl aspect-3/4 my-3 overflow-hidden rounded-2xl shadow-2xl border border-white">
                     {imagens.map((img) => (
                         <Image
                             key={img.id}
@@ -51,8 +52,8 @@ export default function Kids() {
                 </div>
 
                 {/* Texto */}
-                <p className="text-center text-white/80 font-sans text-xl max-w-[80%] mx-auto leading-relaxed">
-                    Uma área completa, cheia dos mais diversos tipos de atividades para os pequenos!
+                <p className="text-center sm:text-right w-full sm:max-w-full text-white/80 font-sans text-xl max-w-[80%] mx-auto leading-relaxed sm:text-2xl md:w-100">
+                    Uma área completa, cheia dos mais diversos tipos de atividades para os pequenos
                 </p>
             </div>
 

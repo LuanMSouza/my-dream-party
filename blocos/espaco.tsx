@@ -26,31 +26,33 @@ export default function Espaco() {
     return (
         <section id="espaco" className="my-10 relative">
 
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-600/50 blur-[120px] -z-10" />
-
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square h-[70%] rounded-full bg-purple-600/30 -z-10"
+                style={{ background: 'radial-gradient(circle, rgba(147,51,234,0.4) 0%, transparent 70%)' }}
+            />
             <h2 className="text-center font-bold text-3xl uppercase tracking-widest text-[#d55f9c] mb-8">
                 nosso espaço!</h2>
 
-            <div className="grid grid-cols-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center">
                 {/* Carrosel */}
-                <div className="relative mx-auto w-[70%] max-w-5xl aspect-3/4 my-3 overflow-hidden rounded-2xl shadow-2xl border border-white" >
+                <div className="relative mx-auto w-[70%] max-w-5xl aspect-3/4 my-3 overflow-hidden rounded-2xl shadow-2xl border border-white md:max-w-150 md:mr-0 md:ml-auto" >
                     {imagens.map((img) => (
                         <Image
                             key={img.id}
                             src={img.src}
                             fill
                             alt={img.alt}
-                            sizes="(max-width: 1280px) 100vw, 1200px"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 1200px"
                             className={`object-cover absolute inset-0 duration-1000 ease-in-out ${img.id === imagemAtual.id ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
                                 }`}
-                            priority={img.id === 1}
+                            fetchPriority={img.id === 1 ? "high" : "auto"}
                         />
                     ))}
                 </div>
 
                 {/* Texto */}
-                <p className="text-center text-white/80 font-sans text-xl max-w-[80%] mx-auto leading-relaxed">
-                    Menus pensados para qualquer horario e ocasião!</p>
+                <p className="sm:max-w-full text-center text-white/80 sm:text-left font-sans text-xl max-w-[80%] mx-auto leading-relaxed sm:text-2xl md:w-100">
+                    Espaço Amplo, para abrigar qualquer tipo de festa ou evento!</p>
+
             </div>
 
 

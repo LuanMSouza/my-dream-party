@@ -1,7 +1,12 @@
+import dynamic from 'next/dynamic'
+
+import Diferenciais from "@/blocos/diferenciais";
 import Espaco from "@/blocos/espaco";
+import Footer from "@/blocos/footer";
 import Hero from "@/blocos/hero";
-import Kids from "@/blocos/kids";
-import Menu from "@/blocos/menu";
+
+const Kids = dynamic(() => import('@/blocos/kids'))
+const Menu = dynamic(() => import('@/blocos/menu'))
 
 export default function Home() {
   return (
@@ -11,6 +16,8 @@ export default function Home() {
         <Espaco />
         <Kids />
         <Menu />
+        <Diferenciais />
+        <Footer />
       </main>
     </>
   );

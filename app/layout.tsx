@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Orbitron } from 'next/font/google'
-import Whatsapp from "./componentes/whatsapp";
+import Whatsapp from "@/componentes/whatsapp";
 
 export const metadata: Metadata = {
   title: "Create Next App",
