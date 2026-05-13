@@ -25,7 +25,7 @@ export default function Kids() {
         return () => clearInterval(intervalo);
     }, []);
     return (
-        <section id="kids" className="my-10 relative">
+        <section id="kids" className="my-10 relative overflow-x-hidden">
 
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-square h-[70%] rounded-full bg-purple-600/30 -z-10"
                 style={{ background: 'radial-gradient(circle, rgba(51,77,243,0.4) 0%, transparent 70%)' }}
