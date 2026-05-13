@@ -1,29 +1,87 @@
 'use client'
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Menu() {
 
-    const imagens = [
-        { id: 1, src: '/menu1.webp', alt: 'Foto finger food' },
-        { id: 2, src: '/menu2.webp', alt: 'Foto feijoada' },
-        { id: 3, src: '/menu3.webp', alt: 'Foto cesta frutas' },
-        { id: 4, src: '/menu4.webp', alt: 'Foto onion ring' },
-        { id: 5, src: '/menu5.webp', alt: 'Foto mesa completa' }
+    const menu = [
+        {
+            id: 1,
+            nome: 'Menu Week',
+            observacao: true,
+            itens: [
+                'Entradinhas Finger Food (2 variedades)',
+                'Salgados Fritos e Assados (12 variedades)',
+                'Kids (4 variedades)',
+                'Prato Quente (Penne na manteiga, molho sugo e branco, isca de frango e salada verde)',
+                'Bolo com sorvete de creme',
+                'Doces',
+                'Bebidas não alcoólicas',
+            ]
+        },
+        {
+            id: 2,
+            nome: 'Menu SKY',
+            observacao: true,
+            itens: [
+                'Entradinhas Finger Food (3 variedades)',
+                'Salgados Fritos e Assados (15 variedades)',
+                'Kids (4 variedades)',
+                'Prato Quente (Massa recheada, molho sugo e branco, isca de frango ou Strogonoff de frango, acompanhamentos.Salada verde e penne na manteiga)',
+                'Bolo com sorvete de creme',
+                'Doces',
+                'Bebidas não alcoólicas',
+            ]
+        },
+        {
+            id: 3,
+            nome: 'Menu Star',
+            observacao: false,
+            itens: [
+                'Entradinhas Finger Food (3 variedades)',
+                'Salgados Fritos e Assados (20 variedades)',
+                'Kids (6 variedades)',
+                'Mesa Gastronômica STAR',
+                'Prato Quente (Filé Mignon + Acompanhamentos ou Filé de peixe com molho de camarão + Acompanhamentos. Salada Verde e Penne na Manteiga))',
+                'Bolo com sorvete de creme',
+                'Doces',
+                'Bebidas não alcoólicas',
+            ]
+        },
+        {
+            id: 4,
+            nome: 'Menu Dream',
+            observacao: false,
+            itens: [
+                'Entradinhas Finger Food (4 variedades)',
+                'Salgados Fritos e Assados (20 variedades)',
+                'Kids (6 variedades)',
+                'Mesa Gastronômica DREAM',
+                'Prato Quente (Medalhão de Mignon + acompanhamentos ou Filé de Abadejo com camarão + Acompanhamentos ou Salmão Molho Maracujá + Acompanhamentos. Penne na Manteiga e Salada Verde)',
+                'Bolo com sorvete de creme',
+                'Doces',
+                'Bebidas não alcoólicas',
+            ]
+        }, {
+            id: 5,
+            nome: 'Menu Feijoada',
+            observacao: false,
+            itens: [
+                'Entradinhas Finger Food (3 variedades)',
+                'Salgados Fritos e Assados (10 variedades)',
+                'Kids (4 variedades)',
+                'Mesa Petiscos completa',
+                'Feijoada completa',
+                'Feijoada Light com itens separados',
+                'Acompanhamentos da Feijoada',
+                'Penne na Manteiga',
+                'Bolo com sorvete de creme',
+                'Doces',
+                'Bebidas não alcoólicas',
+            ]
+        },
     ]
 
-    const [imagemAtual, setImagemAtual] = useState(imagens[0])
 
-    useEffect(() => {
-        const intervalo = setInterval(() => {
-            setImagemAtual((prev) => {
-                const proximoIndex = (imagens.findIndex(img => img.id === prev.id) + 1) % imagens.length;
-                return imagens[proximoIndex];
-            });
-        }, 5000);
-
-        return () => clearInterval(intervalo);
-    }, []);
 
     return (
         <section id="menu" className="my-10 relative overflow-x-hidden">
@@ -34,28 +92,31 @@ export default function Menu() {
 
             <h2 className="text-center font-bold text-3xl md:text-5xl uppercase tracking-widest text-[#d55f9c] mb-8">
                 nossos menus!</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center">
+            <div className="flex flex-wrap justify-center w-[90%] m-auto justify-items-center gap-5">
 
-                {/* Carrosel */}
-                <div className="relative  mx-auto w-[70%] max-w-5xl aspect-3/4 my-3 overflow-hidden rounded-2xl shadow-2xl border border-white  md:max-w-150 md:mr-0 md:ml-auto">
-                    {imagens.map((img) => (
-                        <Image
-                            key={img.id}
-                            src={img.src}
-                            fill
-                            alt={img.alt}
-                            sizes="(max-width: 1280px) 100vw, 1200px"
-                            className={`object-cover absolute inset-0 duration-1000 ease-in-out ${img.id === imagemAtual.id ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
-                                }`}
-                            priority={img.id === 1}
-                        />
-                    ))}
-                </div>
+                {
+                    menu.map((m) => {
+                        return (
+                            <div className="text-white w-75 sm:w-100 border bg-black/60 p-3 rounded-2xl relative " key={m.id}>
+                                <p className="text-center text-3xl">{m.nome}</p>
 
-                {/* Texto */}
-                <p className="sm:max-w-full sm:text-left sm:text-2xl md:text-3xl text-center text-white/80 font-sans text-xl max-w-[80%] mx-auto leading-relaxed md:w-100">
-                    Cardápios cuidadosamente elaborados para encantar em qualquer horário e ocasião.</p>
+                                {m.itens.map((i) => {
+                                    return (
+                                        <p className="text-base mt-4 font-sans"> - {i}</p>
+                                    )
+                                })}
 
+                                {m.observacao ? <p className="absolute top-2 right-2 text-2xl">*</p> : ''}
+
+                                {m.observacao ?
+                                    <p className=" text-sm text-center mt-3 font-sans text-gray-300">
+                                        * Menu não válido para 15 anos, casamentos e bodas
+                                    </p> : ''}
+
+                            </div>
+                        )
+                    })
+                }
             </div>
 
 
