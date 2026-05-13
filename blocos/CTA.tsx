@@ -16,7 +16,7 @@ export default function CTA() {
                     Seu evento começa aqui
                 </p>
 
-                <h2 className="font-bold text-3xl sm:text-5xl uppercase tracking-widest"
+                <h2 className="font-bold text-3xl sm:text-5xl uppercase tracking-widest text-gray-300"
                     style={{ textShadow: '0 0 20px rgba(213,95,156,0.6)' }}>
                     <span className="text-[#d55f9c]">Realize</span> a festa{" "}
                     <span className="text-blue-400" style={{ textShadow: '0 0 20px rgba(96,165,250,0.6)' }}>

@@ -1,9 +1,11 @@
+import { PartyPopper, ParkingCircle, ChefHat, icons } from 'lucide-react'
+
 export default function Diferenciais() {
 
     const diferenciais = [
-        { id: 1, dif: `Buffet térreo` },
-        { id: 2, dif: `Vagas fáceis` },
-        { id: 3, dif: `5 horas de festa` },
+        { id: 1, dif: `Buffet térreo`, icon: <ChefHat size={70} color='white' /> },
+        { id: 2, dif: `Vagas fáceis`, icon: <ParkingCircle size={70} color='white' /> },
+        { id: 3, dif: `5 horas de festa`, icon: <PartyPopper size={70} color='white'/> },
     ]
 
     return (
@@ -21,7 +23,10 @@ export default function Diferenciais() {
 
                 {diferenciais.map((d) => {
                     return (
-                        <div key={d.id} className={`aspect-square w-[60%]  sm:w-full p-3 border-2 border-blue-200 flex flex-col items-center justify-center rounded-full  text-center bg-gray-950 mx-4 sm:mx-1 ${d.id !== 1 ? `-mt-7` : ``} ${d.id % 2 === 0 ? `self-start neon-azul` : `self-end neon-rosa`}`}>
+                        <div key={d.id} className={` w-[60%]  sm:w-full p-3 border-2 border-blue-200 flex flex-col items-center justify-center rounded-4xl  text-center bg-gray-950 mx-4 sm:mx-1 ${d.id !== 1 ? `-mt-7` : ``} ${d.id % 2 === 0 ? `self-start neon-azul` : `self-end neon-rosa`}`}>
+
+                            {d.icon}
+
                             <h3 style={{ fontSize: 'clamp(1rem, 10vw, 2rem)' }} className={d.id % 2 === 0 ? "text-blue-500" : "text-pink-500"} >{d.dif}</h3>
                         </div>
                     )
