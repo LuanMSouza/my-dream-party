@@ -11,6 +11,7 @@ export default function Hero() {
                     src={'/logo.webp'}
                     height={200}
                     width={200}
+                    loading="eager"
                     alt="Logo My Dream Party"
                     className="bg-gray-950 rounded-full z-10 "
                     priority

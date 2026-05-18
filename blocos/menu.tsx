@@ -102,7 +102,7 @@ export default function Menu() {
 
                                 {m.itens.map((i) => {
                                     return (
-                                        <p className="text-base mt-4 font-sans"> - {i}</p>
+                                        <p key={i} className="text-base mt-4 font-sans"> - {i}</p>
                                     )
                                 })}
 

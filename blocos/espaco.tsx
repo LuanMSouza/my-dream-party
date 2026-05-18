@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 export default function Espaco() {
 
     const imagens = [
-        { id: 1, src: '/evento.webp', alt: 'Foto evento tema Neon' },
-        { id: 2, src: '/evento2.webp', alt: 'Foto evento tema Barbie' },
-        { id: 3, src: '/evento3.webp', alt: 'Foto evento 74 anos' }
+        { id: 1, src: '/evento.webp', alt: 'Foto evento tema Bob esponja' },
+        { id: 2, src: '/evento2.webp', alt: 'Foto Fachada' },
+        { id: 3, src: '/evento3.webp', alt: 'Foto mesa posta' }
     ]
 
     const [imagemAtual, setImagemAtual] = useState(imagens[0])
@@ -40,6 +40,7 @@ export default function Espaco() {
                             key={img.id}
                             src={img.src}
                             fill
+                            loading="eager"
                             alt={img.alt}
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 1200px"
                             className={`object-cover absolute inset-0 duration-1000 ease-in-out ${img.id === imagemAtual.id ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
