@@ -5,9 +5,10 @@ import { useEffect, useState } from "react";
 export default function Espaco() {
 
     const imagens = [
-        { id: 1, src: '/evento.webp', alt: 'Foto evento tema Bob esponja' },
-        { id: 2, src: '/evento2.webp', alt: 'Foto Fachada' },
-        { id: 3, src: '/evento3.webp', alt: 'Foto mesa posta' }
+        { id: 1, src: '/evento.webp', alt: 'Foto evento rosa' },
+        { id: 2, src: '/evento2.webp', alt: 'Foto Evento Bob Esponja' },
+        { id: 3, src: '/evento3.webp', alt: 'Foto Evento Avengers' },
+        { id: 4, src: '/evento4.webp', alt: 'Foto Evento Patrulha Canina' }
     ]
 
     const [imagemAtual, setImagemAtual] = useState(imagens[0])

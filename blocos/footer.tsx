@@ -9,6 +9,7 @@ export default function Footer() {
                     src="/logo.webp"
                     fill
                     className="object-contain"
+                    sizes="(max-width: 768px) 200px, 250px"
                     alt="Logo My Dream Party"
                 />
             </div>
