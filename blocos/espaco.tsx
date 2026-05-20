@@ -19,7 +19,7 @@ export default function Espaco() {
                 const proximoIndex = (imagens.findIndex(img => img.id === prev.id) + 1) % imagens.length;
                 return imagens[proximoIndex];
             });
-        }, 5000);
+        }, 2000);
 
         return () => clearInterval(intervalo);
     }, []);
