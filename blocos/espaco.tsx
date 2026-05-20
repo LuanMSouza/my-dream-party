@@ -31,7 +31,7 @@ export default function Espaco() {
                 style={{ background: 'radial-gradient(circle, rgba(147,51,234,0.4) 0%, transparent 70%)' }}
             />
             <h2 className="text-center md:text-5xl font-bold text-3xl uppercase tracking-widest text-[#d55f9c] mb-8">
-                nosso espaço!</h2>
+                nosso espaço! *</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center">
                 {/* Carrosel */}
@@ -51,9 +51,14 @@ export default function Espaco() {
                     ))}
                 </div>
 
-                {/* Texto */}
-                <p className="sm:max-w-full md:text-3xl text-center text-white/80 sm:text-left font-sans text-xl max-w-[80%] mx-auto leading-relaxed sm:text-2xl md:w-100">
-                    Um espaço amplo e versátil, perfeito para transformar qualquer celebração em uma festa inesquecível!</p>
+                <div>
+                    {/* Texto */}
+                    <p className="sm:max-w-full md:text-3xl text-center text-white/80 sm:text-left font-sans text-xl max-w-[80%] mx-auto leading-relaxed sm:text-2xl md:w-100">
+                        Um espaço amplo e versátil, perfeito para transformar qualquer celebração em uma festa inesquecível!</p>
+
+                    {/* subtexto */}
+                    <p className="text-center text-white/60 mt-5 font-sans text-xl">*Decoração não inclusa</p>
+                </div>
 
             </div>
 
