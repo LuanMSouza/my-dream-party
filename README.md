@@ -2,7 +2,7 @@
 
 # My Dream Party
 
-Plataforma para planejamento e organização de festas e eventos.
+Plataforma desenvolvida para cliente na região de Santos, SP.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -15,7 +15,7 @@ Plataforma para planejamento e organização de festas e eventos.
 
 ## 📋 Sobre
 
-Plataforma que conecta clientes a fornecedores de eventos, facilitando o planejamento e organização de festas e comemorações.
+Projeto freelance desenvolvido para cliente da **região de Santos, SP**. Plataforma para planejamento e organização de festas e eventos, conectando clientes a fornecedores locais.
 
 ## 🚀 Como Rodar
 
