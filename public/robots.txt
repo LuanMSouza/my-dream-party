@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mydreamparty.com.br/sitemap.xml
