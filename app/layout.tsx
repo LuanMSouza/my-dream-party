@@ -4,6 +4,9 @@ import { Orbitron } from 'next/font/google'
 import Whatsapp from "@/componentes/whatsapp";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://mydreamparty.com.br'
+  },
   title: "My Dream Party Buffet | Festas e Eventos",
   description: "Buffet completo para festas infantis e eventos em Santos/SP. Espaço kids, cardápios especiais e estrutura premium para tornar seu evento inesquecível.",
   keywords: ["Buffet Santos", "Festa Infantil Santos", "Salão de Festas Santos", "My Dream Party", "Espaço Kids", "Eventos Santos", "Buffet Infantil Baixada Santista"],
